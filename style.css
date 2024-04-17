@@ -1,83 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@400;700&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Martel Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .main {
-     background-image: url("assets/images/bg.jpg.jpg");
-     height: 70vh;
-     background-position: center center;
-     background-size: max(1200px, 100vw);
-     background-repeat: no-repeat;
-     position: relative;
+  background-image: url("assets/images/bg.jpg.jpg");
+  height: 70vh;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .main .box {
-    height: 70vh;
-    width: 100%;
-    opacity: 0.55;
-    background-color: black;
-    position: absolute;
-    top: 0;
+  height: 70vh;
+  width: 100%;
+  opacity: 0.55;
+  background-color: black;
+  position: absolute;
+  top: 0;
 }
 
 nav {
-    max-width: 60vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
 }
 
 nav img {
-    width: 114px;
-    position: relative;
-    z-index: 10;
+  width: 114px;
+  position: relative;
+  z-index: 10;
 }
 
 nav button {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .hero {
-    height: calc(100% - 62px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    position: relative;
-    gap: 23px;
-    padding: 0 30px;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 15px;
+  padding: 0 30px;
 }
 
-.hero> :nth-child(1) {
-    font-weight: bolder;
-    font-size: 48px;
-    text-align: center;
+.hero > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
 }
 
-.hero> :nth-child(2) {
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
 }
 
-.hero> :nth-child(3) {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
 }
 
 .sepration {
-    height: 7px;
-    background-color: rgb(35 35 35);
+  height: 7px;
+  background-color: rgb(35 35 35);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.028);
+  border: 1px solid rgba(255, 255, 255, 0.028);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(244, 240, 240, 0.7);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+.secImg {
+  width: 30vw;
+  position: relative;
+}
+
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+}
+
+.first > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(2) {
+  font-size: 24px;
 }
