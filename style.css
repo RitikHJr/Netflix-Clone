@@ -271,6 +271,10 @@ footer {
   .footer-item {
     align-items: center;
   }
+
+  .first > div {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -278,6 +282,35 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav img {
+    width: 78px;
+  }
+  .hero > :nth-child(1) {
+    font-size: 22px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 13px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 13px;
+  }
+  .main input {
+    padding: 7px 13px 7px 14px;
+    height: 24px;
+  }
+  .btn-red {
+    height: 30px;
+    width: 142px;
+    padding: 0px 11px;
+    font-size: 16px;
+  }
+
+  #sec1Video {
+    padding: 44px 0px 0px 1px;
   }
 }
 
