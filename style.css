@@ -38,7 +38,7 @@ nav {
 }
 
 nav img {
-  width: 114px;
+  width: 130px;
   position: relative;
   z-index: 10;
 }
@@ -140,7 +140,7 @@ nav button {
 }
 
 .secImg img {
-  width: 30vw;
+  width: 555px;
   position: relative;
   z-index: 10;
 }
@@ -149,11 +149,13 @@ nav button {
   position: absolute;
   top: 90px;
   right: 50px;
+  width: 555px;
 }
 
 .first > div {
   display: flex;
   flex-direction: column;
+  padding: 34px 0;
 }
 
 .first > div :nth-child(1) {
@@ -163,4 +165,114 @@ nav button {
 
 .first > div :nth-child(2) {
   font-size: 24px;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faqbox {
+  display: flex;
+  padding: 24px;
+  margin: 25px auto;
+  background-color: rgb(128 128 128 / 33%);
+  width: 50vw;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+  background-color: rgba(128, 128, 128, 0.521);
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+}
+
+.questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
