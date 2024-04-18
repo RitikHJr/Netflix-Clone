@@ -95,6 +95,8 @@ nav button {
 }
 
 .btn-red {
+  height: 58px;
+  width: 200px;
   background-color: red;
   color: white;
   padding: 3px 24px;
@@ -116,10 +118,12 @@ nav button {
 }
 
 .main input {
-  padding: 7px 101px 8px 14px;
+  height: 40px;
+  width: 200px;
+  padding: 7px 101px 7px 14px;
   color: white;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 19px;
   border-radius: 4px;
   background-color: rgba(23, 23, 23, 0.7);
   border: 1px solid rgba(244, 240, 240, 0.7);
@@ -135,21 +139,32 @@ nav button {
 }
 
 .secImg {
-  width: 30vw;
-  position: relative;
-}
-
-.secImg img {
   width: 555px;
   position: relative;
   z-index: 10;
 }
 
-.secImg video {
+#sec1Video {
   position: absolute;
-  top: 90px;
-  right: 50px;
+  text-align: center;
+  padding: 95px 9px 10px 75px;
+  z-index: -1;
+}
+
+#thirdImg {
   width: 555px;
+  position: relative;
+  z-index: 10;
+}
+#third-video-source {
+  width: 406px;
+}
+
+#thirdVideo {
+  position: absolute;
+  text-align: center;
+  padding: 41px 7px 0px 114px;
+  z-index: -1;
 }
 
 .first > div {
